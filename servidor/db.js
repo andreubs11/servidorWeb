@@ -19,8 +19,8 @@ class Obj {
         this.host           = '109.237.25.44'
         this.port           = 3306
         this.db             = 'serverDB_apalacios'
-        this.usr            = 'apalacios'
-        this.pwd            = '8ase2pwd'
+        this.usr            = 'abejar'
+        this.pwd            = '1b3g5liq'
         this.pool           = null
 
         this.logCyan        = '\x1b[36m%s\x1b[0m '
