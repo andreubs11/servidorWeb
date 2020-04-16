@@ -60,9 +60,9 @@ header{
       background: #2193b0;
 
       /* fallback for old browsers */
-      background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(imatges/fondo.jpg);
+      background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(/home/andreubs/servidorWeb/web/imatges/fondo.jpg);
       /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(to right, hsla(183,100%,50%, 0.259), hsla(201,100%,50%, 0.364)), url(imatges/fondo.jpg);
+      background: linear-gradient(to right, hsla(183,100%,50%, 0.259), hsla(201,100%,50%, 0.364)), url(/home/andreubs/servidorWeb/web/imatges/fondo.jpg);
       /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
       background-size: cover;
       background-attachment: fixed;
