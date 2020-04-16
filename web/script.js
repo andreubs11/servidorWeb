@@ -38,3 +38,32 @@ function iniciaSeccio(seccio) {
     }
 }
 
+function amagaMenu (evt) {
+    let refBody = document.getElementsByTagName('body')[0],
+        refSmall = document.getElementById('frontendMenuMobil'),
+        refContainer = document.getElementById('menuContainer')
+
+    refBody.style.overflow = 'auto' // Recuperar scroll
+
+    refSmall.style.opacity = 0
+    setTimeout(() => { refSmall.style.visibility = 'hidden' }, 500)
+
+    refContainer.style.transform = 'translateY(0)'
+}
+
+
+function mostraMenu (evt) {
+    let refBody = document.getElementsByTagName('body')[0],
+        refSmall = document.getElementById('frontendMenuMobil'),
+        refContainer = document.getElementById('menuContainer'),
+        estilSmall = window.getComputedStyle(refSmall, ''),
+        estilContainer = window.getComputedStyle(refContainer, ''),
+        midaContainer = parseInt(estilContainer.getPropertyValue('height')),
+        altura = - midaContainer + 10
+
+    refBody.style.overflow = 'hidden' // Treure scroll
+    refSmall.style.visibility = 'visible'
+    refSmall.style.opacity = 1
+
+    refContainer.style.transform =  'translateY(' + altura + 'px)'
+}
